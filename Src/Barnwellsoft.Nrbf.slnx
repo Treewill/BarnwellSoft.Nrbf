@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Barnwellsoft.Nrbf.Tests.BinaryFormatterInterop/Barnwellsoft.Nrbf.Tests.BinaryFormatterInterop.csproj">
+    <Build Project="false" />
+  </Project>
+  <Project Path="Barnwellsoft.Nrbf.Tests/Barnwellsoft.Nrbf.Tests.csproj" />
+  <Project Path="Barnwellsoft.Nrbf/Barnwellsoft.Nrbf.csproj" />
+</Solution>

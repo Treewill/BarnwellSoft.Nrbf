@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>Trevor Barnwell</Authors>
+        <Description>An NRBF reading and writing library.</Description>
+        <Copyright>© Trevor Barnwell 2026</Copyright>
+        <PackageTags>BinaryFormatter Serializable</PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/Treewill/BarnwellSoft.Nrbf</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <TargetFrameworks>netstandard1.0;netstandard2.0;net48;net6.0;net8.0;net10.0</TargetFrameworks>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>SharedKey.snk</AssemblyOriginatorKeyFile>
+        <CheckNotRecommendedTargetFramework Condition="'$(TargetFramework)' == 'netstandard1.0'">false</CheckNotRecommendedTargetFramework>
+        <NoWarn>$(NoWarn);NU1903</NoWarn>
+        <DefineConstants Condition="'$(TargetFramework)' != 'netstandard1.0'">$(DefineConstants);HAVE_ICONVERTIBLE</DefineConstants>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Nerdbank.GitVersioning" Version="3.10.91" PrivateAssets="all" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>

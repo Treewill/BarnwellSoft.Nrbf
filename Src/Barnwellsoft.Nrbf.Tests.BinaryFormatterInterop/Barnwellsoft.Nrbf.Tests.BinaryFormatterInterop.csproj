@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Runtime.Serialization.Formatters" Version="10.0.9" />
+        <PackageReference Include="TUnit" Version="1.63.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Barnwellsoft.Nrbf\Barnwellsoft.Nrbf.csproj" />
+    </ItemGroup>
+
+</Project>
