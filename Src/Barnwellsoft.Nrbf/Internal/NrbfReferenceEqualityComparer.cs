@@ -21,8 +21,8 @@ using System.Runtime.CompilerServices;
 namespace Barnwellsoft.Nrbf.Internal
 {
     /// <summary>
-    /// An <see cref="IEqualityComparer{Object}"/> that uses reference equality (<see cref="object.ReferenceEquals(object?, object?)"/>)
-    /// instead of value equality (<see cref="object.Equals(object?)"/>) when comparing two object instances.
+    /// An <see cref="IEqualityComparer{Object}"/> that uses reference equality (<see cref="object.ReferenceEquals(object, object)"/>)
+    /// instead of value equality (<see cref="object.Equals(object)"/>) when comparing two object instances.
     /// </summary>
     /// <remarks>
     /// The <see cref="NrbfReferenceEqualityComparer"/> type cannot be instantiated. Instead, use the <see cref="Instance"/> property
